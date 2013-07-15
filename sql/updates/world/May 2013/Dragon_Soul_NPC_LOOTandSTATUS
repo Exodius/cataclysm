@@ -1,0 +1,567 @@
+--  http://old.wowhead.com/npc=58036
+DELETE FROM `npc_vendor` WHERE `entry` = 58036;
+INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `type`) VALUES 
+(58036, 0, 58274, 0, 0, 0, 1), -- 6Fresh Water
+(58036, 0, 58257, 0, 0, 0, 1), -- 6Highland Spring Water
+(58036, 0, 58269, 0, 0, 0, 1), -- 6Massive Turkey Leg
+(58036, 0, 58268, 0, 0, 0, 1), -- 6Roasted Beef
+(58036, 0, 58256, 0, 0, 0, 1), -- 6Sparkling Oasis Water
+(58036, 0, 58280, 0, 0, 0, 1); -- 6Stewed Rabbit
+
+
+--  http://old.wowhead.com/npc=55689
+DELETE FROM `pickpocketing_loot_template` WHERE `entry` = 55689;
+INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `lootmode`, `groupid`, `mincountOrRef`, `maxcount`) VALUES 
+(55689, 74246, 172.5904, 1, 0, 1, 1), -- 6Cryptomancer's Decoder Ring
+(55689, 78421, 0.3012, 1, 0, 1, 1), -- 3Signet of Grasping Mouths
+(55689, 78427, 0.3012, 1, 0, 1, 1), -- 3Ring of the Riven
+(55689, 78874, 0.3012, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Vanquisher
+(55689, 78876, 0.3012, 1, 0, 1, 1); -- 3Shoulders of the Corrupted Protector
+UPDATE `creature_template` SET `pickpocketloot` = 55689 WHERE `entry` = 55689;
+
+--  http://old.wowhead.com/npc=55689
+DELETE FROM `creature_loot_template` WHERE `entry` = 55689;
+INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `lootmode`, `groupid`, `mincountOrRef`, `maxcount`) VALUES 
+(55689, 77952, 107.5110, 1, 0, 1, 1), -- 2Elementium Gem Cluster
+(55689, 71998, 93.5398, 1, 0, 1, 1), -- 3Essence of Destruction
+(55689, 78170, 60.9392, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Vanquisher
+(55689, 78180, 50.4238, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Conqueror
+(55689, 78175, 49.8174, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Protector
+(55689, 78874, 41.7551, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Vanquisher
+(55689, 52078, 38.5646, 1, 0, 1, 1), -- 4Chaos Orb
+(55689, 78875, 36.5491, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Conqueror
+(55689, 78876, 32.0666, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Protector
+(55689, 78011, 25.5616, 1, 0, 1, 1), -- 3Signet of Grasping Mouths
+(55689, 78012, 25.2687, 1, 0, 1, 1), -- 3Ring of the Riven
+(55689, 77221, 22.6571, 1, 0, 1, 1), -- 3Lightning Rod
+(55689, 78427, 19.6320, 1, 0, 1, 1), -- 3Ring of the Riven
+(55689, 77250, 19.4425, 1, 0, 1, 1), -- 3Runescriven Demon Collar
+(55689, 77249, 19.2530, 1, 0, 1, 1), -- 3Bracers of the Banished
+(55689, 77251, 19.1566, 1, 0, 1, 1), -- 3Treads of Dormant Dreams
+(55689, 78421, 18.5157, 1, 0, 1, 1), -- 3Signet of Grasping Mouths
+(55689, 78425, 15.7800, 1, 0, 1, 1), -- 3Bracers of the Banished
+(55689, 77220, 15.6009, 1, 0, 1, 1), -- 3Electrowing Dagger
+(55689, 78423, 14.9945, 1, 0, 1, 1), -- 3Treads of Dormant Dreams
+(55689, 78861, 13.1787, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Vanquisher
+(55689, 78424, 12.9961, 1, 0, 1, 1), -- 3Runescriven Demon Collar
+(55689, 78422, 12.6826, 1, 0, 1, 1), -- 3Electrowing Dagger
+(55689, 77248, 12.3725, 1, 0, 1, 1), -- 3Girdle of the Grotesque
+(55689, 78859, 11.2045, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Conqueror
+(55689, 78860, 10.4224, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Protector
+(55689, 78428, 9.2613, 1, 0, 1, 1), -- 3Girdle of the Grotesque
+(55689, 78419, 7.5662, 1, 0, 1, 1), -- 3Ring of the Riven
+(55689, 78413, 7.0114, 1, 0, 1, 1), -- 3Signet of Grasping Mouths
+(55689, 78418, 6.4292, 1, 0, 1, 1), -- 3Lightning Rod
+(55689, 78417, 5.8469, 1, 0, 1, 1), -- 3Bracers of the Banished
+(55689, 78416, 5.5747, 1, 0, 1, 1), -- 3Runescriven Demon Collar
+(55689, 78415, 5.5196, 1, 0, 1, 1), -- 3Treads of Dormant Dreams
+(55689, 78414, 4.9683, 1, 0, 1, 1), -- 3Electrowing Dagger
+(55689, 78420, 3.6659, 1, 0, 1, 1), -- 3Girdle of the Grotesque
+(55689, 77209, 1.4402, 1, 0, 1, 1), -- 3Windward Heart
+(55689, 77232, 1.3920, 1, 0, 1, 1), -- 3Hardheart Ring
+(55689, 78862, 1.3747, 1, 0, 1, 1), -- 3Chest of the Corrupted Vanquisher
+(55689, 77229, 1.3644, 1, 0, 1, 1), -- 3Signet of Suturing
+(55689, 77211, 1.3230, 1, 0, 1, 1), -- 3Indomitable Pride
+(55689, 77231, 1.2989, 1, 0, 1, 1), -- 3Seal of Primordial Shadow
+(55689, 77230, 1.2817, 1, 0, 1, 1), -- 3Breathstealer Band
+(55689, 78868, 1.2300, 1, 0, 1, 1), -- 3Crown of the Corrupted Vanquisher
+(55689, 78871, 1.2197, 1, 0, 1, 1), -- 3Leggings of the Corrupted Vanquisher
+(55689, 77208, 1.1818, 1, 0, 1, 1), -- 3Cunning of the Cruel
+(55689, 77207, 1.1783, 1, 0, 1, 1), -- 3Vial of Shadows
+(55689, 77210, 1.1611, 1, 0, 1, 1), -- 3Bone-Link Fetish
+(55689, 78497, 1.1508, 1, 0, 1, 1), -- 3Breathstealer Band
+(55689, 77979, 1.1439, 1, 0, 1, 1), -- 3Vial of Shadows
+(55689, 78869, 1.1267, 1, 0, 1, 1), -- 3Crown of the Corrupted Conqueror
+(55689, 78865, 1.1060, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Vanquisher
+(55689, 78867, 1.0991, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Protector
+(55689, 77228, 1.0922, 1, 0, 1, 1), -- 3Infinite Loop
+(55689, 78863, 1.0233, 1, 0, 1, 1), -- 3Chest of the Corrupted Conqueror
+(55689, 78872, 0.9992, 1, 0, 1, 1), -- 3Leggings of the Corrupted Conqueror
+(55689, 78866, 0.9682, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Conqueror
+(55689, 78498, 0.9578, 1, 0, 1, 1), -- 3Hardheart Ring
+(55689, 78864, 0.9440, 1, 0, 1, 1), -- 3Chest of the Corrupted Protector
+(55689, 77980, 0.9234, 1, 0, 1, 1), -- 3Cunning of the Cruel
+(55689, 78496, 0.9061, 1, 0, 1, 1), -- 3Signet of Suturing
+(55689, 77982, 0.8924, 1, 0, 1, 1), -- 3Bone-Link Fetish
+(55689, 77983, 0.8614, 1, 0, 1, 1), -- 3Indomitable Pride
+(55689, 78873, 0.8614, 1, 0, 1, 1), -- 3Leggings of the Corrupted Protector
+(55689, 78495, 0.7821, 1, 0, 1, 1), -- 3Infinite Loop
+(55689, 78870, 0.7339, 1, 0, 1, 1), -- 3Crown of the Corrupted Protector
+(55689, 78494, 0.7063, 1, 0, 1, 1), -- 3Seal of Primordial Shadow
+(55689, 77981, 0.6719, 1, 0, 1, 1), -- 3Windward Heart
+(55689, 77999, 0.4307, 1, 0, 1, 1), -- 3Vial of Shadows
+(55689, 78492, 0.4135, 1, 0, 1, 1), -- 3Breathstealer Band
+(55689, 78493, 0.4100, 1, 0, 1, 1), -- 3Hardheart Ring
+(55689, 78001, 0.3790, 1, 0, 1, 1), -- 3Windward Heart
+(55689, 78002, 0.3756, 1, 0, 1, 1), -- 3Bone-Link Fetish
+(55689, 78003, 0.3514, 1, 0, 1, 1), -- 3Indomitable Pride
+(55689, 78000, 0.3480, 1, 0, 1, 1), -- 3Cunning of the Cruel
+(55689, 78491, 0.3239, 1, 0, 1, 1), -- 3Signet of Suturing
+(55689, 78490, 0.3032, 1, 0, 1, 1), -- 3Infinite Loop
+(55689, 78489, 0.2998, 1, 0, 1, 1); -- 3Seal of Primordial Shadow
+-- http://www.wowhead.com/npc=55689
+DELETE FROM `creature_template` WHERE `entry`=55689 LIMIT 1;
+INSERT INTO `creature_template` ( `entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction_A`, `faction_H`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `mindmg`, `maxdmg`, `dmgschool`, `attackpower`, `dmg_multiplier`, `baseattacktime`, `rangeattacktime`, `unit_class`, `unit_flags`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `minrangedmg`, `maxrangedmg`, `rangedattackpower`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `spell5`, `spell6`, `spell7`, `spell8`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `Health_mod`, `Mana_mod`, `Armor_mod`, `RacialLeader`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `movementId`, `RegenHealth`, `equipment_id`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`, `WDBVerified`) VALUES ( 55689, 0, 0, 0, 0, 0, 39318, 0, 0, 0, "Hagara the Stormbinder", "", "", 0, 86, 86, 3, 16, 16, 0, 1.0, 1.57143, 1.0, 1, 4209, 5077, 0, 1, 7.4, 2000, 0, 2, 0, 0, 0, 0, 0, 0, 0, 4209, 5077, 1, 7, 108, 55689, 55689, 0, 0, 0, 0, 0, 0, 0, 64238, 0, 108934, 107850, 107851, 109325, 105256, 104448, 0, 0, 120000, 681619, "SmartAI", 0, 3, 1436.9084, 105.1755, 1.0, 0, 0, 0, 0, 0, 0, 0, 157, 1, 0, 0, 1, "", "15595");
+
+-- http://www.wowhead.com/npc=55312
+DELETE FROM `creature_template` WHERE `entry`=55312 LIMIT 1;
+INSERT INTO `creature_template` ( `entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction_A`, `faction_H`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `mindmg`, `maxdmg`, `dmgschool`, `attackpower`, `dmg_multiplier`, `baseattacktime`, `rangeattacktime`, `unit_class`, `unit_flags`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `minrangedmg`, `maxrangedmg`, `rangedattackpower`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `spell5`, `spell6`, `spell7`, `spell8`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `Health_mod`, `Mana_mod`, `Armor_mod`, `RacialLeader`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `movementId`, `RegenHealth`, `equipment_id`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`, `WDBVerified`) VALUES ( 55312, 0, 0, 0, 0, 0, 39101, 0, 0, 0, "Yor'sahj the Unsleeping", "", "", 0, 86, 86, 3, 16, 16, 0, 3.2, 2.0, 1.0, 3, 5021, 6012, 0, 1, 7.0, 2000, 2000, 1, 0, 0, 0, 0, 0, 0, 0, 5021, 6012, 1, 10, 108, 55312, 0, 0, 0, 0, 0, 0, 0, 0, 104898, 26662, 104894, 105027, 104897, 105171, 104901, 105033, 0, 0, 120000, 744525, "SmartAI", 0, 3, 1561.8395, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 187, 1, 0, 0, 1, "", "15595");
+--  http://old.wowhead.com/npc=55312
+DELETE FROM `creature_loot_template` WHERE `entry` = 55312;
+INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `lootmode`, `groupid`, `mincountOrRef`, `maxcount`) VALUES 
+(55312, 77952, 82.4730, 1, 0, 1, 1), -- 2Elementium Gem Cluster
+(55312, 71998, 72.6633, 1, 0, 1, 1), -- 3Essence of Destruction
+(55312, 78871, 62.6505, 1, 0, 1, 1), -- 3Leggings of the Corrupted Vanquisher
+(55312, 78872, 55.2260, 1, 0, 1, 1), -- 3Leggings of the Corrupted Conqueror
+(55312, 78873, 48.4556, 1, 0, 1, 1), -- 3Leggings of the Corrupted Protector
+(55312, 78171, 42.8258, 1, 0, 1, 1), -- 3Leggings of the Corrupted Vanquisher
+(55312, 78181, 35.2524, 1, 0, 1, 1), -- 3Leggings of the Corrupted Conqueror
+(55312, 78176, 34.6054, 1, 0, 1, 1), -- 3Leggings of the Corrupted Protector
+(55312, 77971, 30.2555, 1, 0, 1, 1), -- 3Insignia of the Corrupted Mind
+(55312, 78408, 20.8544, 1, 0, 1, 1), -- 3Interrogator's Bloody Footpads
+(55312, 77203, 19.3548, 1, 0, 1, 1), -- 3Insignia of the Corrupted Mind
+(55312, 77970, 18.9227, 1, 0, 1, 1), -- 3Soulshifter Vortex
+(55312, 77219, 17.9946, 1, 0, 1, 1), -- 3Scalpel of Unrelenting Agony
+(55312, 77217, 15.5812, 1, 0, 1, 1), -- 3Experimental Specimen Slicer
+(55312, 78411, 15.2104, 1, 0, 1, 1), -- 3Mindstrainer Treads
+(55312, 78412, 14.4854, 1, 0, 1, 1), -- 3Heartblood Wristplates
+(55312, 77206, 14.3579, 1, 0, 1, 1), -- 3Soulshifter Vortex
+(55312, 78858, 13.5951, 1, 0, 1, 1), -- 3Leggings of the Corrupted Vanquisher
+(55312, 77254, 13.3495, 1, 0, 1, 1), -- 3Interrogator's Bloody Footpads
+(55312, 77218, 13.0614, 1, 0, 1, 1), -- 3Spire of Coagulated Globules
+(55312, 78856, 11.2478, 1, 0, 1, 1), -- 3Leggings of the Corrupted Conqueror
+(55312, 78857, 11.1982, 1, 0, 1, 1), -- 3Leggings of the Corrupted Protector
+(55312, 77252, 9.9702, 1, 0, 1, 1), -- 3Mindstrainer Treads
+(55312, 77253, 9.5334, 1, 0, 1, 1), -- 3Heartblood Wristplates
+(55312, 77991, 7.3537, 1, 0, 1, 1), -- 3Insignia of the Corrupted Mind
+(55312, 78874, 6.7562, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Vanquisher
+(55312, 78404, 6.7562, 1, 0, 1, 1), -- 3Scalpel of Unrelenting Agony
+(55312, 78862, 6.0502, 1, 0, 1, 1), -- 3Chest of the Corrupted Vanquisher
+(55312, 78868, 5.8943, 1, 0, 1, 1), -- 3Crown of the Corrupted Vanquisher
+(55312, 78403, 5.8471, 1, 0, 1, 1), -- 3Experimental Specimen Slicer
+(55312, 78865, 5.6322, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Vanquisher
+(55312, 77990, 5.3228, 1, 0, 1, 1), -- 3Soulshifter Vortex
+(55312, 78863, 5.3086, 1, 0, 1, 1), -- 3Chest of the Corrupted Conqueror
+(55312, 78875, 5.1292, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Conqueror
+(55312, 78401, 5.0040, 1, 0, 1, 1), -- 3Spire of Coagulated Globules
+(55312, 78402, 4.7797, 1, 0, 1, 1), -- 3Interrogator's Bloody Footpads
+(55312, 78867, 4.6026, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Protector
+(55312, 78876, 4.5931, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Protector
+(55312, 78869, 4.5506, 1, 0, 1, 1), -- 3Crown of the Corrupted Conqueror
+(55312, 78864, 4.3499, 1, 0, 1, 1), -- 3Chest of the Corrupted Protector
+(55312, 78870, 4.2578, 1, 0, 1, 1), -- 3Crown of the Corrupted Protector
+(55312, 78866, 3.9909, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Conqueror
+(55312, 78406, 3.8115, 1, 0, 1, 1), -- 3Heartblood Wristplates
+(55312, 78405, 3.7690, 1, 0, 1, 1), -- 3Mindstrainer Treads
+(55312, 78497, 1.5964, 1, 0, 1, 1), -- 3Breathstealer Band
+(55312, 77983, 1.5043, 1, 0, 1, 1), -- 3Indomitable Pride
+(55312, 77980, 1.4665, 1, 0, 1, 1), -- 3Cunning of the Cruel
+(55312, 77979, 1.4216, 1, 0, 1, 1), -- 3Vial of Shadows
+(55312, 78498, 1.3791, 1, 0, 1, 1), -- 3Hardheart Ring
+(55312, 77981, 1.3602, 1, 0, 1, 1), -- 3Windward Heart
+(55312, 78496, 1.3248, 1, 0, 1, 1), -- 3Signet of Suturing
+(55312, 77982, 1.2894, 1, 0, 1, 1), -- 3Bone-Link Fetish
+(55312, 78495, 1.2374, 1, 0, 1, 1), -- 3Infinite Loop
+(55312, 78494, 1.1642, 1, 0, 1, 1), -- 3Seal of Primordial Shadow
+(55312, 77211, 1.0957, 1, 0, 1, 1), -- 3Indomitable Pride
+(55312, 77228, 1.0580, 1, 0, 1, 1), -- 3Infinite Loop
+(55312, 77232, 1.0249, 1, 0, 1, 1), -- 3Hardheart Ring
+(55312, 77210, 0.9895, 1, 0, 1, 1), -- 3Bone-Link Fetish
+(55312, 77230, 0.9635, 1, 0, 1, 1), -- 3Breathstealer Band
+(55312, 77208, 0.9233, 1, 0, 1, 1), -- 3Cunning of the Cruel
+(55312, 77209, 0.9021, 1, 0, 1, 1), -- 3Windward Heart
+(55312, 77207, 0.8383, 1, 0, 1, 1), -- 3Vial of Shadows
+(55312, 77229, 0.8336, 1, 0, 1, 1), -- 3Signet of Suturing
+(55312, 77231, 0.8336, 1, 0, 1, 1), -- 3Seal of Primordial Shadow
+(55312, 78490, 0.3023, 1, 0, 1, 1), -- 3Infinite Loop
+(55312, 78003, 0.2763, 1, 0, 1, 1), -- 3Indomitable Pride
+(55312, 78000, 0.2739, 1, 0, 1, 1), -- 3Cunning of the Cruel
+(55312, 77999, 0.2621, 1, 0, 1, 1), -- 3Vial of Shadows
+(55312, 78492, 0.2243, 1, 0, 1, 1), -- 3Breathstealer Band
+(55312, 78001, 0.2196, 1, 0, 1, 1), -- 3Windward Heart
+(55312, 78002, 0.2031, 1, 0, 1, 1), -- 3Bone-Link Fetish
+(55312, 78491, 0.2031, 1, 0, 1, 1), -- 3Signet of Suturing
+(55312, 78493, 0.2031, 1, 0, 1, 1), -- 3Hardheart Ring
+(55312, 78489, 0.2007, 1, 0, 1, 1); -- 3Seal of Primordial Shadow
+
+-- http://www.wowhead.com/npc=55294
+DELETE FROM `creature_template` WHERE `entry`=55294 LIMIT 1;
+INSERT INTO `creature_template` ( `entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction_A`, `faction_H`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `mindmg`, `maxdmg`, `dmgschool`, `attackpower`, `dmg_multiplier`, `baseattacktime`, `rangeattacktime`, `unit_class`, `unit_flags`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `minrangedmg`, `maxrangedmg`, `rangedattackpower`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `spell5`, `spell6`, `spell7`, `spell8`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `Health_mod`, `Mana_mod`, `Armor_mod`, `RacialLeader`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `movementId`, `RegenHealth`, `equipment_id`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`, `WDBVerified`) VALUES ( 55294, 0, 0, 0, 0, 0, 39099, 0, 0, 0, "Ultraxion", "", "", 0, 86, 86, 3, 16, 16, 0, 1.0, 1.42857, 1.0, 1, 4261, 5014, 0, 1, 5.0, 2000, 2000, 1, 32832, 0, 0, 0, 0, 0, 0, 4261, 5014, 1, 2, 2097260, 55294, 0, 0, 0, 0, 0, 0, 0, 0, 109075, 106371, 106415, 106388, 106369, 106376, 0, 106377, 0, 1847, 0, 0, "SmartAI", 0, 3, 2568.0747, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 144, 1, 0, 0, 1, "", "15595");
+
+--  http://old.wowhead.com/npc=55294
+DELETE FROM `creature_loot_template` WHERE `entry` = 55294;
+INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `lootmode`, `groupid`, `mincountOrRef`, `maxcount`) VALUES 
+(55294, 78862, 26.0809, 1, 0, 1, 1), -- 3Chest of the Corrupted Vanquisher
+(55294, 78863, 25.6625, 1, 0, 1, 1), -- 3Chest of the Corrupted Conqueror
+(55294, 77952, 24.9651, 1, 0, 1, 1), -- 2Elementium Gem Cluster
+(55294, 71998, 22.1757, 1, 0, 1, 1), -- 3Essence of Destruction
+(55294, 78864, 21.8968, 1, 0, 1, 1), -- 3Chest of the Corrupted Protector
+(55294, 78174, 20.9205, 1, 0, 1, 1), -- 3Chest of the Corrupted Vanquisher
+(55294, 78184, 20.9205, 1, 0, 1, 1), -- 3Chest of the Corrupted Conqueror
+(55294, 78179, 17.8522, 1, 0, 1, 1), -- 3Chest of the Corrupted Protector
+(55294, 77972, 12.9707, 1, 0, 1, 1), -- 3Creche of the Final Dragon
+(55294, 78440, 11.2971, 1, 0, 1, 1), -- 3Curled Twilight Claw
+(55294, 78442, 10.0418, 1, 0, 1, 1), -- 3Treads of Sordid Screams
+(55294, 78443, 9.9024, 1, 0, 1, 1), -- 3Imperfect Specimens 27 and 28
+(55294, 78444, 9.7629, 1, 0, 1, 1), -- 3Dragonfracture Belt
+(55294, 77243, 9.4840, 1, 0, 1, 1), -- 3Treads of Sordid Screams
+(55294, 77245, 9.0656, 1, 0, 1, 1), -- 3Ledger of Revolting Rituals
+(55294, 78441, 8.6471, 1, 0, 1, 1), -- 3Ledger of Revolting Rituals
+(55294, 78013, 6.5551, 1, 0, 1, 1), -- 3Curled Twilight Claw
+(55294, 77223, 6.1367, 1, 0, 1, 1), -- 3Morningstar of Heroic Will
+(55294, 78439, 5.9972, 1, 0, 1, 1), -- 3Stillheart Warboots
+(55294, 77205, 5.9972, 1, 0, 1, 1), -- 3Creche of the Final Dragon
+(55294, 77242, 5.7183, 1, 0, 1, 1), -- 3Imperfect Specimens 27 and 28
+(55294, 77244, 5.5788, 1, 0, 1, 1), -- 3Dragonfracture Belt
+(55294, 77247, 5.0209, 1, 0, 1, 1), -- 3Bracers of Looming Darkness
+(55294, 78438, 4.6025, 1, 0, 1, 1), -- 3Bracers of Looming Darkness
+(55294, 77246, 4.4630, 1, 0, 1, 1), -- 3Stillheart Warboots
+(55294, 78865, 1.9526, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Vanquisher
+(55294, 78874, 1.2552, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Vanquisher
+(55294, 77207, 1.2552, 1, 0, 1, 1), -- 3Vial of Shadows
+(55294, 77980, 1.1158, 1, 0, 1, 1), -- 3Cunning of the Cruel
+(55294, 77983, 1.1158, 1, 0, 1, 1), -- 3Indomitable Pride
+(55294, 78496, 1.1158, 1, 0, 1, 1), -- 3Signet of Suturing
+(55294, 78494, 0.9763, 1, 0, 1, 1), -- 3Seal of Primordial Shadow
+(55294, 77230, 0.9763, 1, 0, 1, 1), -- 3Breathstealer Band
+(55294, 77979, 0.8368, 1, 0, 1, 1), -- 3Vial of Shadows
+(55294, 77981, 0.6974, 1, 0, 1, 1), -- 3Windward Heart
+(55294, 78498, 0.6974, 1, 0, 1, 1), -- 3Hardheart Ring
+(55294, 78868, 0.6974, 1, 0, 1, 1), -- 3Crown of the Corrupted Vanquisher
+(55294, 78872, 0.6974, 1, 0, 1, 1), -- 3Leggings of the Corrupted Conqueror
+(55294, 77209, 0.6974, 1, 0, 1, 1), -- 3Windward Heart
+(55294, 77228, 0.6974, 1, 0, 1, 1), -- 3Infinite Loop
+(55294, 77232, 0.6974, 1, 0, 1, 1), -- 3Hardheart Ring
+(55294, 78876, 0.5579, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Protector
+(55294, 77210, 0.5579, 1, 0, 1, 1), -- 3Bone-Link Fetish
+(55294, 77211, 0.5579, 1, 0, 1, 1), -- 3Indomitable Pride
+(55294, 78495, 0.4184, 1, 0, 1, 1), -- 3Infinite Loop
+(55294, 78875, 0.4184, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Conqueror
+(55294, 77208, 0.4184, 1, 0, 1, 1), -- 3Cunning of the Cruel
+(55294, 77982, 0.2789, 1, 0, 1, 1), -- 3Bone-Link Fetish
+(55294, 78497, 0.1395, 1, 0, 1, 1), -- 3Breathstealer Band
+(55294, 78866, 0.1395, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Conqueror
+(55294, 78867, 0.1395, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Protector
+(55294, 78869, 0.1395, 1, 0, 1, 1), -- 3Crown of the Corrupted Conqueror
+(55294, 78870, 0.1395, 1, 0, 1, 1), -- 3Crown of the Corrupted Protector
+(55294, 78871, 0.1395, 1, 0, 1, 1), -- 3Leggings of the Corrupted Vanquisher
+(55294, 78873, 0.1395, 1, 0, 1, 1), -- 3Leggings of the Corrupted Protector
+(55294, 77229, 0.1395, 1, 0, 1, 1), -- 3Signet of Suturing
+(55294, 77231, 0.1395, 1, 0, 1, 1), -- 3Seal of Primordial Shadow
+(55294, 77992, 0.1395, 1, 0, 1, 1), -- 3Creche of the Final Dragon
+(55294, 77999, 0.1395, 1, 0, 1, 1), -- 3Vial of Shadows
+(55294, 78000, 0.1395, 1, 0, 1, 1), -- 3Cunning of the Cruel
+(55294, 78001, 0.1395, 1, 0, 1, 1), -- 3Windward Heart
+(55294, 78002, 0.1395, 1, 0, 1, 1), -- 3Bone-Link Fetish
+(55294, 78003, 0.1395, 1, 0, 1, 1), -- 3Indomitable Pride
+(55294, 78429, 0.1395, 1, 0, 1, 1), -- 3Morningstar of Heroic Will
+(55294, 78430, 0.1395, 1, 0, 1, 1), -- 3Bracers of Looming Darkness
+(55294, 78431, 0.1395, 1, 0, 1, 1), -- 3Stillheart Warboots
+(55294, 78432, 0.1395, 1, 0, 1, 1), -- 3Curled Twilight Claw
+(55294, 78433, 0.1395, 1, 0, 1, 1), -- 3Ledger of Revolting Rituals
+(55294, 78434, 0.1395, 1, 0, 1, 1), -- 3Treads of Sordid Screams
+(55294, 78435, 0.1395, 1, 0, 1, 1), -- 3Imperfect Specimens 27 and 28
+(55294, 78436, 0.1395, 1, 0, 1, 1), -- 3Dragonfracture Belt
+(55294, 78489, 0.1395, 1, 0, 1, 1), -- 3Seal of Primordial Shadow
+(55294, 78490, 0.1395, 1, 0, 1, 1), -- 3Infinite Loop
+(55294, 78491, 0.1395, 1, 0, 1, 1), -- 3Signet of Suturing
+(55294, 78492, 0.1395, 1, 0, 1, 1), -- 3Breathstealer Band
+(55294, 78493, 0.1395, 1, 0, 1, 1), -- 3Hardheart Ring
+(55294, 78847, 0.1395, 1, 0, 1, 1), -- 3Chest of the Corrupted Conqueror
+(55294, 78848, 0.1395, 1, 0, 1, 1), -- 3Chest of the Corrupted Protector
+(55294, 78849, 0.1395, 1, 0, 1, 1); -- 3Chest of the Corrupted Vanquisher
+
+--  http://old.wowhead.com/npc=56427
+DELETE FROM `creature_loot_template` WHERE `entry` = 56427;
+INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `lootmode`, `groupid`, `mincountOrRef`, `maxcount`) VALUES 
+(56427, 77952, 107.4588, 1, 0, 1, 1), -- 2Elementium Gem Cluster
+(56427, 71998, 95.1772, 1, 0, 1, 1), -- 3Essence of Destruction
+(56427, 78172, 63.7575, 1, 0, 1, 1), -- 3Crown of the Corrupted Vanquisher
+(56427, 78868, 57.0244, 1, 0, 1, 1), -- 3Crown of the Corrupted Vanquisher
+(56427, 78182, 54.9314, 1, 0, 1, 1), -- 3Crown of the Corrupted Conqueror
+(56427, 78177, 52.5422, 1, 0, 1, 1), -- 3Crown of the Corrupted Protector
+(56427, 78869, 49.3484, 1, 0, 1, 1), -- 3Crown of the Corrupted Conqueror
+(56427, 78870, 44.7428, 1, 0, 1, 1), -- 3Crown of the Corrupted Protector
+(56427, 77973, 25.3727, 1, 0, 1, 1), -- 3Starcatcher Compass
+(56427, 77202, 24.5829, 1, 0, 1, 1), -- 3Starcatcher Compass
+(56427, 77224, 22.8502, 1, 0, 1, 1), -- Ataraxis, Cudgel of the Warmaster
+(56427, 77225, 21.1966, 1, 0, 1, 1), -- 3Visage of the Destroyer
+(56427, 77240, 18.8962, 1, 0, 1, 1), -- 3Shadow Wing Armbands
+(56427, 77241, 18.4964, 1, 0, 1, 1), -- 3Belt of the Beloved Companion
+(56427, 78454, 18.2200, 1, 0, 1, 1), -- 3Shadow Wing Armbands
+(56427, 77234, 17.6424, 1, 0, 1, 1), -- 3Janglespur Jackboots
+(56427, 77239, 17.2031, 1, 0, 1, 1), -- 3Goriona's Collar
+(56427, 77226, 17.0797, 1, 0, 1, 1), -- 3Blackhorn's Mighty Bulwark
+(56427, 77227, 16.9266, 1, 0, 1, 1), -- 3Timepiece of the Bronze Flight
+(56427, 78457, 16.7144, 1, 0, 1, 1), -- 3Janglespur Jackboots
+(56427, 78460, 16.0973, 1, 0, 1, 1), -- 3Goriona's Collar
+(56427, 78455, 15.9591, 1, 0, 1, 1), -- 3Belt of the Beloved Companion
+(56427, 78456, 15.0657, 1, 0, 1, 1), -- 3Blackhorn's Mighty Bulwark
+(56427, 78458, 15.0657, 1, 0, 1, 1), -- 3Timepiece of the Bronze Flight
+(56427, 78852, 10.0602, 1, 0, 1, 1), -- 3Crown of the Corrupted Vanquisher
+(56427, 78850, 8.5053, 1, 0, 1, 1), -- 3Crown of the Corrupted Conqueror
+(56427, 78851, 8.3374, 1, 0, 1, 1), -- 3Crown of the Corrupted Protector
+(56427, 77993, 4.7932, 1, 0, 1, 1), -- 3Starcatcher Compass
+(56427, 78445, 4.3686, 1, 0, 1, 1), -- Ataraxis, Cudgel of the Warmaster
+(56427, 78447, 4.1268, 1, 0, 1, 1), -- 3Belt of the Beloved Companion
+(56427, 78451, 4.0527, 1, 0, 1, 1), -- 3Visage of the Destroyer
+(56427, 78446, 3.7516, 1, 0, 1, 1), -- 3Shadow Wing Armbands
+(56427, 78449, 3.7319, 1, 0, 1, 1), -- 3Janglespur Jackboots
+(56427, 78874, 3.6825, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Vanquisher
+(56427, 78871, 3.5887, 1, 0, 1, 1), -- 3Leggings of the Corrupted Vanquisher
+(56427, 78862, 3.5492, 1, 0, 1, 1), -- 3Chest of the Corrupted Vanquisher
+(56427, 78452, 3.3172, 1, 0, 1, 1), -- 3Goriona's Collar
+(56427, 78448, 3.3123, 1, 0, 1, 1), -- 3Blackhorn's Mighty Bulwark
+(56427, 78865, 3.2481, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Vanquisher
+(56427, 78863, 3.2135, 1, 0, 1, 1), -- 3Chest of the Corrupted Conqueror
+(56427, 78875, 3.0852, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Conqueror
+(56427, 78450, 3.0112, 1, 0, 1, 1), -- 3Timepiece of the Bronze Flight
+(56427, 78876, 2.7397, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Protector
+(56427, 78872, 2.6064, 1, 0, 1, 1), -- 3Leggings of the Corrupted Conqueror
+(56427, 78864, 2.5422, 1, 0, 1, 1), -- 3Chest of the Corrupted Protector
+(56427, 78867, 2.4780, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Protector
+(56427, 78873, 2.3991, 1, 0, 1, 1), -- 3Leggings of the Corrupted Protector
+(56427, 78866, 2.2460, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Conqueror
+(56427, 77211, 1.3920, 1, 0, 1, 1), -- 3Indomitable Pride
+(56427, 77231, 1.2785, 1, 0, 1, 1), -- 3Seal of Primordial Shadow
+(56427, 77232, 1.2736, 1, 0, 1, 1), -- 3Hardheart Ring
+(56427, 77209, 1.2440, 1, 0, 1, 1), -- 3Windward Heart
+(56427, 77229, 1.1946, 1, 0, 1, 1), -- 3Signet of Suturing
+(56427, 77230, 1.1699, 1, 0, 1, 1), -- 3Breathstealer Band
+(56427, 78498, 1.1304, 1, 0, 1, 1), -- 3Hardheart Ring
+(56427, 77228, 1.1304, 1, 0, 1, 1), -- 3Infinite Loop
+(56427, 77208, 1.1255, 1, 0, 1, 1), -- 3Cunning of the Cruel
+(56427, 77210, 1.0811, 1, 0, 1, 1), -- 3Bone-Link Fetish
+(56427, 77207, 1.0564, 1, 0, 1, 1), -- 3Vial of Shadows
+(56427, 77981, 1.0366, 1, 0, 1, 1), -- 3Windward Heart
+(56427, 78494, 1.0317, 1, 0, 1, 1), -- 3Seal of Primordial Shadow
+(56427, 77979, 1.0169, 1, 0, 1, 1), -- 3Vial of Shadows
+(56427, 77982, 1.0119, 1, 0, 1, 1), -- 3Bone-Link Fetish
+(56427, 77980, 0.9725, 1, 0, 1, 1), -- 3Cunning of the Cruel
+(56427, 78496, 0.9527, 1, 0, 1, 1), -- 3Signet of Suturing
+(56427, 78497, 0.9132, 1, 0, 1, 1), -- 3Breathstealer Band
+(56427, 77983, 0.8540, 1, 0, 1, 1), -- 3Indomitable Pride
+(56427, 78495, 0.8293, 1, 0, 1, 1), -- 3Infinite Loop
+(56427, 78492, 0.3357, 1, 0, 1, 1), -- 3Breathstealer Band
+(56427, 78003, 0.2863, 1, 0, 1, 1), -- 3Indomitable Pride
+(56427, 78491, 0.2814, 1, 0, 1, 1), -- 3Signet of Suturing
+(56427, 78001, 0.2419, 1, 0, 1, 1), -- 3Windward Heart
+(56427, 78493, 0.2419, 1, 0, 1, 1), -- 3Hardheart Ring
+(56427, 78000, 0.2320, 1, 0, 1, 1), -- 3Cunning of the Cruel
+(56427, 77999, 0.1975, 1, 0, 1, 1), -- 3Vial of Shadows
+(56427, 78490, 0.1975, 1, 0, 1, 1), -- 3Infinite Loop
+(56427, 78489, 0.1925, 1, 0, 1, 1), -- 3Seal of Primordial Shadow
+(56427, 78002, 0.1826, 1, 0, 1, 1); -- 3Bone-Link Fetish
+
+-- http://www.wowhead.com/npc=56427
+DELETE FROM `creature_template` WHERE `entry`=56427 LIMIT 1;
+INSERT INTO `creature_template` ( `entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction_A`, `faction_H`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `mindmg`, `maxdmg`, `dmgschool`, `attackpower`, `dmg_multiplier`, `baseattacktime`, `rangeattacktime`, `unit_class`, `unit_flags`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `minrangedmg`, `maxrangedmg`, `rangedattackpower`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `spell5`, `spell6`, `spell7`, `spell8`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `Health_mod`, `Mana_mod`, `Armor_mod`, `RacialLeader`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `movementId`, `RegenHealth`, `equipment_id`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`, `WDBVerified`) VALUES ( 56427, 0, 0, 0, 0, 0, 39399, 0, 0, 0, "Warmaster Blackhorn", "", "", 0, 86, 86, 3, 16, 16, 0, 2.0, 2.0, 1.0, 1, 4892, 5204, 0, 1, 7.0, 1500, 2000, 1, 32832, 0, 0, 0, 0, 0, 0, 4892, 5204, 1, 7, 76, 56427, 0, 0, 0, 0, 0, 0, 0, 0, 26662, 108042, 108044, 110137, 108046, 108043, 108045, 0, 0, 0, 0, 0, "SmartAI", 0, 3, 541.7145, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 184, 1, 0, 0, 1, "", "15595");
+
+-- http://www.wowhead.com/npc=55308
+DELETE FROM `creature_template` WHERE `entry`=55308 LIMIT 1;
+INSERT INTO `creature_template` ( `entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction_A`, `faction_H`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `mindmg`, `maxdmg`, `dmgschool`, `attackpower`, `dmg_multiplier`, `baseattacktime`, `rangeattacktime`, `unit_class`, `unit_flags`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `minrangedmg`, `maxrangedmg`, `rangedattackpower`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `spell5`, `spell6`, `spell7`, `spell8`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `Health_mod`, `Mana_mod`, `Armor_mod`, `RacialLeader`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `movementId`, `RegenHealth`, `equipment_id`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`, `WDBVerified`) VALUES ( 55308, 0, 0, 0, 0, 0, 39138, 0, 0, 0, "Warlord Zon'ozz", "", "", 0, 86, 86, 3, 16, 16, 0, 3.2, 2.28571, 1.0, 3, 4156, 5015, 0, 0, 7.0, 2000, 2000, 1, 0, 0, 0, 0, 0, 0, 0, 4156, 5015, 0, 10, 108, 55308, 0, 0, 0, 0, 0, 0, 0, 0, 26662, 104378, 103434, 104543, 104322, 0, 0, 0, 0, 0, 120000, 726832, "SmartAI", 0, 3, 1567.5474, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 204, 1, 0, 0, 1, "", "15595");
+
+--  http://old.wowhead.com/npc=53879
+DELETE FROM `creature_template` WHERE `entry`=53879 LIMIT 1;
+INSERT INTO `creature_template` ( `entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction_A`, `faction_H`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `mindmg`, `maxdmg`, `dmgschool`, `attackpower`, `dmg_multiplier`, `baseattacktime`, `rangeattacktime`, `unit_class`, `unit_flags`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `minrangedmg`, `maxrangedmg`, `rangedattackpower`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `spell5`, `spell6`, `spell7`, `spell8`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `Health_mod`, `Mana_mod`, `Armor_mod`, `RacialLeader`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `movementId`, `RegenHealth`, `equipment_id`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`, `WDBVerified`) VALUES ( 53879, 0, 0, 0, 0, 0, 35268, 35268, 35268, 35268, "Deathwing", "The Destroyer", "", 0, 86, 86, 3, 16, 16, 0, 1.0, 1.14286, 1.0, 1, 4301, 5065, 0, 1, 11.0, 2000, 2000, 1, 0, 0, 0, 0, 0, 0, 0, 4301, 5065, 1, 10, 0, 53879, 0, 0, 0, 0, 0, 0, 0, 0, 109048, 0, 0, 0, 0, 0, 0, 0, 0, 0, 120000, 1088761, "", 0, 3, 3949.9624, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, "", "15595");
+
+--  http://old.wowhead.com/npc=53879
+DELETE FROM `creature_loot_template` WHERE `entry` = 53879;
+INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `lootmode`, `groupid`, `mincountOrRef`, `maxcount`) VALUES 
+(53879, 78466, 27.5607, 1, 0, 1, 1), -- 3Gloves of Liquid Smoke
+(53879, 78467, 27.4172, 1, 0, 1, 1), -- 3Molten Blood Footpads
+(53879, 77974, 26.4238, 1, 0, 1, 1), -- 3Wrath of Unchaining
+(53879, 77977, 26.2141, 1, 0, 1, 1), -- 3Eye of Unmaking
+(53879, 77975, 24.8896, 1, 0, 1, 1), -- 3Will of Unbinding
+(53879, 78470, 23.5872, 1, 0, 1, 1), -- 3Backbreaker Spaulders
+(53879, 77978, 18.8742, 1, 0, 1, 1), -- 3Resolve of Undying
+(53879, 78469, 18.8079, 1, 0, 1, 1), -- 3Gauntlets of the Golden Thorn
+(53879, 77976, 18.2892, 1, 0, 1, 1), -- 3Heart of Unliving
+(53879, 78468, 18.0132, 1, 0, 1, 1), -- 3Belt of Shattered Elementium
+(53879, 77952, 13.0353, 1, 0, 1, 1), -- 2Elementium Gem Cluster
+(53879, 71998, 10.3753, 1, 0, 1, 1), -- 3Essence of Destruction
+(53879, 77236, 5.9603, 1, 0, 1, 1), -- 3Backbreaker Spaulders
+(53879, 77238, 5.1325, 1, 0, 1, 1), -- 3Molten Blood Footpads
+(53879, 77198, 5.1104, 1, 0, 1, 1), -- 3Will of Unbinding
+(53879, 78357, 5.1104, 1, 0, 1, 1), -- 3Gloves of Liquid Smoke
+(53879, 77197, 4.6358, 1, 0, 1, 1), -- 3Wrath of Unchaining
+(53879, 77200, 4.3377, 1, 0, 1, 1), -- 3Eye of Unmaking
+(53879, 77199, 3.9294, 1, 0, 1, 1), -- 3Heart of Unliving
+(53879, 77201, 3.9294, 1, 0, 1, 1), -- 3Resolve of Undying
+(53879, 77237, 3.2340, 1, 0, 1, 1), -- 3Belt of Shattered Elementium
+(53879, 77235, 2.8035, 1, 0, 1, 1), -- 3Gauntlets of the Golden Thorn
+(53879, 77994, 0.0110, 1, 0, 1, 1), -- 3Wrath of Unchaining
+(53879, 77995, 0.0110, 1, 0, 1, 1), -- 3Will of Unbinding
+(53879, 77996, 0.0110, 1, 0, 1, 1), -- 3Heart of Unliving
+(53879, 77997, 0.0110, 1, 0, 1, 1), -- 3Eye of Unmaking
+(53879, 77998, 0.0110, 1, 0, 1, 1), -- 3Resolve of Undying
+(53879, 78461, 0.0110, 1, 0, 1, 1), -- 3Gloves of Liquid Smoke
+(53879, 78462, 0.0110, 1, 0, 1, 1), -- 3Molten Blood Footpads
+(53879, 78463, 0.0110, 1, 0, 1, 1), -- 3Belt of Shattered Elementium
+(53879, 78464, 0.0110, 1, 0, 1, 1), -- 3Gauntlets of the Golden Thorn
+(53879, 78465, 0.0110, 1, 0, 1, 1); -- 3Backbreaker Spaulders
+
+--  http://old.wowhead.com/npc=56173
+DELETE FROM `creature_template` WHERE `entry`=56173 LIMIT 1;
+INSERT INTO `creature_template` ( `entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction_A`, `faction_H`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `mindmg`, `maxdmg`, `dmgschool`, `attackpower`, `dmg_multiplier`, `baseattacktime`, `rangeattacktime`, `unit_class`, `unit_flags`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `minrangedmg`, `maxrangedmg`, `rangedattackpower`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `spell5`, `spell6`, `spell7`, `spell8`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `Health_mod`, `Mana_mod`, `Armor_mod`, `RacialLeader`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `movementId`, `RegenHealth`, `equipment_id`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`, `WDBVerified`) VALUES ( 56173, 0, 0, 0, 0, 0, 39355, 0, 0, 0, "Deathwing", "The Destroyer", "", 0, 86, 86, 3, 16, 16, 0, 1.0, 1.14286, 1.0, 1, 5001, 7213, 0, 2, 11.0, 2000, 2000, 1, 0, 0, 0, 0, 0, 0, 0, 5001, 7213, 2, 4, 76, 56173, 0, 0, 0, 0, 0, 0, 0, 0, 107018, 64238, 106523, 108649, 108601, 105651, 0, 0, 0, 1849, 120000, 1088256, "", 0, 3, 3544.374, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, "", "15595");
+
+--  http://old.wowhead.com/npc=56173
+DELETE FROM `creature_loot_template` WHERE `entry` = 56173;
+INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `lootmode`, `groupid`, `mincountOrRef`, `maxcount`) VALUES 
+(56173, 78484, 55.5442, 1, 0, 1, 1), -- 
+(56173, 78487, 54.4724, 1, 0, 1, 1), -- 
+(56173, 78485, 53.3741, 1, 0, 1, 1), -- 3Maw of the Dragonlord
+(56173, 78481, 48.1431, 1, 0, 1, 1), -- 
+(56173, 78482, 45.2559, 1, 0, 1, 1), -- 
+(56173, 71998, 44.4482, 1, 0, 1, 1), -- 3Essence of Destruction
+(56173, 78483, 38.8927, 1, 0, 1, 1), -- 3Blade of the Unmaker
+(56173, 78488, 37.4321, 1, 0, 1, 1), -- 3Souldrinker
+(56173, 78480, 37.3981, 1, 0, 1, 1), -- 
+(56173, 78486, 30.4801, 1, 0, 1, 1), -- 
+(56173, 77952, 24.7056, 1, 0, 1, 1), -- 2Elementium Gem Cluster
+(56173, 77196, 12.2320, 1, 0, 1, 1), -- 3Maw of the Dragonlord
+(56173, 77195, 12.0962, 1, 0, 1, 1), -- 
+(56173, 77191, 11.3979, 1, 0, 1, 1), -- 
+(56173, 77188, 10.8545, 1, 0, 1, 1), -- 
+(56173, 77194, 9.6392, 1, 0, 1, 1), -- 
+(56173, 77193, 9.0504, 1, 0, 1, 1), -- 3Souldrinker
+(56173, 78359, 8.4994, 1, 0, 1, 1), -- 
+(56173, 77189, 8.3145, 1, 0, 1, 1), -- 3Blade of the Unmaker
+(56173, 77190, 6.4387, 1, 0, 1, 1), -- 
+(56173, 77067, 4.5894, 1, 0, 1, 1), -- 3Reins of the Blazing Drake
+(56173, 77069, 2.7816, 1, 0, 1, 1), -- 3Life-Binder's Handmaiden
+(56173, 78478, 1.1549, 1, 0, 1, 1), -- 
+(56173, 78476, 1.1171, 1, 0, 1, 1), -- 3Maw of the Dragonlord
+(56173, 78472, 1.0643, 1, 0, 1, 1), -- 
+(56173, 78475, 0.9737, 1, 0, 1, 1), -- 
+(56173, 78473, 0.9549, 1, 0, 1, 1), -- 
+(56173, 78479, 0.9435, 1, 0, 1, 1), -- 3Souldrinker
+(56173, 78471, 0.8567, 1, 0, 1, 1), -- 
+(56173, 78474, 0.7624, 1, 0, 1, 1), -- 3Blade of the Unmaker
+(56173, 78477, 0.5359, 1, 0, 1, 1), -- 
+(56173, 78352, -0.4755, 1, 0, 1, 1); -- 2Fragment of Deathwing's Jaw
+
+--  http://old.wowhead.com/npc=55308
+DELETE FROM `creature_loot_template` WHERE `entry` = 55308;
+INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `lootmode`, `groupid`, `mincountOrRef`, `maxcount`) VALUES 
+(55308, 77952, 89.1343, 1, 0, 1, 1), -- 2Elementium Gem Cluster
+(55308, 71998, 77.8590, 1, 0, 1, 1), -- 3Essence of Destruction
+(55308, 78865, 57.1316, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Vanquisher
+(55308, 78867, 49.7664, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Protector
+(55308, 78173, 49.6057, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Vanquisher
+(55308, 78866, 44.9493, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Conqueror
+(55308, 78178, 41.7096, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Protector
+(55308, 78183, 41.5216, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Conqueror
+(55308, 77969, 31.6781, 1, 0, 1, 1), -- 3Seal of the Seven Signs
+(55308, 78395, 28.4172, 1, 0, 1, 1), -- 3Belt of Flayed Skin
+(55308, 78396, 27.1219, 1, 0, 1, 1), -- 3Treads of Crushed Flesh
+(55308, 77204, 22.7507, 1, 0, 1, 1), -- 3Seal of the Seven Signs
+(55308, 78398, 21.3766, 1, 0, 1, 1), -- 3Cord of the Slain Champion
+(55308, 78399, 17.8062, 1, 0, 1, 1), -- 3Finger of Zon'ozz
+(55308, 78397, 17.7395, 1, 0, 1, 1), -- 3Graveheart Bracers
+(55308, 77255, 17.4240, 1, 0, 1, 1), -- 3Cord of the Slain Champion
+(55308, 77215, 17.1267, 1, 0, 1, 1), -- 3Horrifying Horn Arbalest
+(55308, 77260, 16.9690, 1, 0, 1, 1), -- 3Belt of Flayed Skin
+(55308, 77259, 16.6748, 1, 0, 1, 1), -- 3Treads of Crushed Flesh
+(55308, 77258, 15.0731, 1, 0, 1, 1), -- 3Graveheart Bracers
+(55308, 77216, 15.0337, 1, 0, 1, 1), -- 3Finger of Zon'ozz
+(55308, 78400, 13.3956, 1, 0, 1, 1), -- 3Grotesquely Writhing Bracers
+(55308, 77257, 11.5695, 1, 0, 1, 1), -- 3Grotesquely Writhing Bracers
+(55308, 78855, 10.7778, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Vanquisher
+(55308, 78854, 9.3096, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Protector
+(55308, 78853, 8.8364, 1, 0, 1, 1), -- 3Gauntlets of the Corrupted Conqueror
+(55308, 77989, 6.2489, 1, 0, 1, 1), -- 3Seal of the Seven Signs
+(55308, 78387, 4.5016, 1, 0, 1, 1), -- 3Horrifying Horn Arbalest
+(55308, 78389, 4.4561, 1, 0, 1, 1), -- 3Treads of Crushed Flesh
+(55308, 78391, 4.4470, 1, 0, 1, 1), -- 3Cord of the Slain Champion
+(55308, 78388, 4.4318, 1, 0, 1, 1), -- 3Belt of Flayed Skin
+(55308, 78392, 3.9192, 1, 0, 1, 1), -- 3Finger of Zon'ozz
+(55308, 78390, 3.8403, 1, 0, 1, 1), -- 3Graveheart Bracers
+(55308, 78393, 2.9121, 1, 0, 1, 1), -- 3Grotesquely Writhing Bracers
+(55308, 77980, 1.8201, 1, 0, 1, 1), -- 3Cunning of the Cruel
+(55308, 77983, 1.7897, 1, 0, 1, 1), -- 3Indomitable Pride
+(55308, 78495, 1.6441, 1, 0, 1, 1), -- 3Infinite Loop
+(55308, 78496, 1.6411, 1, 0, 1, 1), -- 3Signet of Suturing
+(55308, 78497, 1.5713, 1, 0, 1, 1), -- 3Breathstealer Band
+(55308, 78498, 1.5531, 1, 0, 1, 1), -- 3Hardheart Ring
+(55308, 77982, 1.4894, 1, 0, 1, 1), -- 3Bone-Link Fetish
+(55308, 77981, 1.4530, 1, 0, 1, 1), -- 3Windward Heart
+(55308, 77979, 1.4257, 1, 0, 1, 1), -- 3Vial of Shadows
+(55308, 78494, 1.3832, 1, 0, 1, 1), -- 3Seal of Primordial Shadow
+(55308, 77207, 1.2194, 1, 0, 1, 1), -- 3Vial of Shadows
+(55308, 77231, 1.1830, 1, 0, 1, 1), -- 3Seal of Primordial Shadow
+(55308, 77228, 1.1588, 1, 0, 1, 1), -- 3Infinite Loop
+(55308, 77209, 1.1375, 1, 0, 1, 1), -- 3Windward Heart
+(55308, 77210, 1.1315, 1, 0, 1, 1), -- 3Bone-Link Fetish
+(55308, 77208, 1.1224, 1, 0, 1, 1), -- 3Cunning of the Cruel
+(55308, 77230, 1.1193, 1, 0, 1, 1), -- 3Breathstealer Band
+(55308, 77232, 1.1193, 1, 0, 1, 1), -- 3Hardheart Ring
+(55308, 77229, 1.1011, 1, 0, 1, 1), -- 3Signet of Suturing
+(55308, 77211, 1.0223, 1, 0, 1, 1), -- 3Indomitable Pride
+(55308, 78874, 0.7826, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Vanquisher
+(55308, 78875, 0.7432, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Conqueror
+(55308, 78871, 0.7098, 1, 0, 1, 1), -- 3Leggings of the Corrupted Vanquisher
+(55308, 78869, 0.6643, 1, 0, 1, 1), -- 3Crown of the Corrupted Conqueror
+(55308, 78873, 0.5885, 1, 0, 1, 1), -- 3Leggings of the Corrupted Protector
+(55308, 78862, 0.5764, 1, 0, 1, 1), -- 3Chest of the Corrupted Vanquisher
+(55308, 78868, 0.5673, 1, 0, 1, 1), -- 3Crown of the Corrupted Vanquisher
+(55308, 78872, 0.5460, 1, 0, 1, 1), -- 3Leggings of the Corrupted Conqueror
+(55308, 78863, 0.5339, 1, 0, 1, 1), -- 3Chest of the Corrupted Conqueror
+(55308, 78864, 0.5217, 1, 0, 1, 1), -- 3Chest of the Corrupted Protector
+(55308, 78876, 0.5005, 1, 0, 1, 1), -- 3Shoulders of the Corrupted Protector
+(55308, 78870, 0.4550, 1, 0, 1, 1), -- 3Crown of the Corrupted Protector
+(55308, 78492, 0.3549, 1, 0, 1, 1), -- 3Breathstealer Band
+(55308, 78001, 0.3428, 1, 0, 1, 1), -- 3Windward Heart
+(55308, 77999, 0.3337, 1, 0, 1, 1), -- 3Vial of Shadows
+(55308, 78000, 0.3246, 1, 0, 1, 1), -- 3Cunning of the Cruel
+(55308, 78493, 0.3215, 1, 0, 1, 1), -- 3Hardheart Ring
+(55308, 78002, 0.3155, 1, 0, 1, 1), -- 3Bone-Link Fetish
+(55308, 78490, 0.3064, 1, 0, 1, 1), -- 3Infinite Loop
+(55308, 78489, 0.2882, 1, 0, 1, 1), -- 3Seal of Primordial Shadow
+(55308, 78491, 0.2700, 1, 0, 1, 1), -- 3Signet of Suturing
+(55308, 78003, 0.2548, 1, 0, 1, 1); -- 3Indomitable Pride
+
+-- http://www.wowhead.com/npc=55695
+DELETE FROM `creature_template` WHERE `entry`=55695 LIMIT 1;
+INSERT INTO `creature_template` ( `entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction_A`, `faction_H`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `mindmg`, `maxdmg`, `dmgschool`, `attackpower`, `dmg_multiplier`, `baseattacktime`, `rangeattacktime`, `unit_class`, `unit_flags`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `minrangedmg`, `maxrangedmg`, `rangedattackpower`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `spell5`, `spell6`, `spell7`, `spell8`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `Health_mod`, `Mana_mod`, `Armor_mod`, `RacialLeader`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `movementId`, `RegenHealth`, `equipment_id`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`, `WDBVerified`) VALUES ( 55695, 0, 0, 0, 0, 0, 30890, 0, 0, 0, "Ice Tomb", "", "", 0, 85, 85, 3, 16, 16, 0, 1.0, 1.14286, 1.0, 1, 3762, 4788, 0, 2000, 3.0, 2000, 2000, 1, 0, 0, 0, 0, 0, 0, 0, 3762, 4788, 2000, 10, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "", 0, 3, 5.9202, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, "", "15595");
+
+-- http://www.wowhead.com/npc=57823
+DELETE FROM `creature_loot_template` WHERE `entry` = 57823;
+DELETE FROM `creature_template` WHERE `entry`=57823 LIMIT 1;
+INSERT INTO `creature_template` ( `entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction_A`, `faction_H`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `mindmg`, `maxdmg`, `dmgschool`, `attackpower`, `dmg_multiplier`, `baseattacktime`, `rangeattacktime`, `unit_class`, `unit_flags`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `minrangedmg`, `maxrangedmg`, `rangedattackpower`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `spell5`, `spell6`, `spell7`, `spell8`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `Health_mod`, `Mana_mod`, `Armor_mod`, `RacialLeader`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `movementId`, `RegenHealth`, `equipment_id`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`, `WDBVerified`) VALUES ( 57823, 0, 0, 0, 0, 0, 39914, 0, 0, 0, "Stormbinder Adept", "", "", 0, 85, 85, 3, 14, 14, 0, 1.2, 1.42857, 1.0, 1, 3109, 3704, 0, 1, 6.0, 2000, 2000, 2, 0, 0, 0, 0, 0, 0, 0, 3109, 3704, 1, 4, 72, 57823, 0, 0, 0, 0, 0, 0, 0, 0, 109443, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "SmartAI", 0, 3, 63.4311, 2.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 186, 1, 0, 0, 0, "", "15595");
+
+-- http://www.wowhead.com/npc=27953
+DELETE FROM `creature_template` WHERE `entry`=27953 LIMIT 1;
+INSERT INTO `creature_template` ( `entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction_A`, `faction_H`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `mindmg`, `maxdmg`, `dmgschool`, `attackpower`, `dmg_multiplier`, `baseattacktime`, `rangeattacktime`, `unit_class`, `unit_flags`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `minrangedmg`, `maxrangedmg`, `rangedattackpower`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `spell5`, `spell6`, `spell7`, `spell8`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `Health_mod`, `Mana_mod`, `Armor_mod`, `RacialLeader`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `movementId`, `RegenHealth`, `equipment_id`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`, `WDBVerified`) VALUES ( 27953, 0, 0, 0, 0, 0, 14357, 14358, 14359, 14355, "Wyrmrest Protector", "", "", 0, 85, 85, 3, 2013, 2013, 0, 0.992063, 0.992063, 1.0, 1, 4722, 6422, 0, 642, 5.6, 2000, 2000, 1, 32768, 0, 0, 0, 0, 0, 0, 4722, 6422, 642, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15496, 17547, 6533, 23337, 16145, 0, 0, 0, 0, 0, 0, 0, "EventAI", 0, 3, 25.7975, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, "", "12340");
+
+-- http://www.wowhead.com/npc=57817
+DELETE FROM `creature_template` WHERE `entry`=57817 LIMIT 1;
+INSERT INTO `creature_template` ( `entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction_A`, `faction_H`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `mindmg`, `maxdmg`, `dmgschool`, `attackpower`, `dmg_multiplier`, `baseattacktime`, `rangeattacktime`, `unit_class`, `unit_flags`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `minrangedmg`, `maxrangedmg`, `rangedattackpower`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `spell5`, `spell6`, `spell7`, `spell8`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `Health_mod`, `Mana_mod`, `Armor_mod`, `RacialLeader`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `movementId`, `RegenHealth`, `equipment_id`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`, `WDBVerified`) VALUES ( 57817, 0, 0, 0, 0, 0, 39829, 0, 0, 0, "Stormborn Mymidon", "", "", 0, 85, 85, 3, 14, 14, 0, 1.2, 1.42857, 1.0, 1, 4109, 4176, 0, 1, 4.9, 2000, 2000, 2, 0, 0, 0, 0, 0, 0, 0, 4109, 4176, 1, 4, 72, 0, 0, 0, 0, 0, 0, 0, 0, 0, 109348, 109368, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "SmartAI", 0, 3, 71.8886, 2.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 186, 1, 0, 0, 0, "", "15595");
+
+
+--  http://old.wowhead.com/npc=57821
+DELETE FROM `creature_loot_template` WHERE `entry` = 57821;
+INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `lootmode`, `groupid`, `mincountOrRef`, `maxcount`) VALUES 
+(57821, 78882, 8.2759, 1, 0, 1, 1), -- 3Nightblind Cinch
+(57821, 78886, 7.6393, 1, 0, 1, 1); -- 3Belt of Ghostly Graces
+
+--  http://old.wowhead.com/npc=57821
+DELETE FROM `creature_template` WHERE `entry`=57821 LIMIT 1;
+INSERT INTO `creature_template` ( `entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction_A`, `faction_H`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `mindmg`, `maxdmg`, `dmgschool`, `attackpower`, `dmg_multiplier`, `baseattacktime`, `rangeattacktime`, `unit_class`, `unit_flags`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `minrangedmg`, `maxrangedmg`, `rangedattackpower`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `spell5`, `spell6`, `spell7`, `spell8`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `Health_mod`, `Mana_mod`, `Armor_mod`, `RacialLeader`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `movementId`, `RegenHealth`, `equipment_id`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`, `WDBVerified`) VALUES ( 57821, 0, 0, 0, 0, 0, 39836, 0, 0, 0, "Lieutenant Shara", "", "", 0, 85, 85, 3, 16, 16, 0, 1.2, 1.42857, 1.0, 1, 3109, 3922, 0, 1, 4.9, 2000, 2000, 2, 0, 0, 0, 0, 0, 0, 0, 3109, 3922, 1, 4, 72, 57821, 0, 0, 0, 0, 0, 0, 0, 0, 109333, 109305, 109331, 109393, 0, 0, 0, 0, 0, 0, 32123, 63508, "SmartAI", 0, 3, 143.7772, 2.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 186, 1, 0, 0, 0, "", "15595");
+
+-- http://www.wowhead.com/npc=57751
+DELETE FROM `creature_template` WHERE `entry`=57751 LIMIT 1;
+INSERT INTO `creature_template` ( `entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction_A`, `faction_H`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `mindmg`, `maxdmg`, `dmgschool`, `attackpower`, `dmg_multiplier`, `baseattacktime`, `rangeattacktime`, `unit_class`, `unit_flags`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `minrangedmg`, `maxrangedmg`, `rangedattackpower`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `spell5`, `spell6`, `spell7`, `spell8`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `Health_mod`, `Mana_mod`, `Armor_mod`, `RacialLeader`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `movementId`, `RegenHealth`, `equipment_id`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`, `WDBVerified`) VALUES ( 57751, 0, 0, 0, 0, 0, 39125, 0, 0, 0, "Ruin Tentacle", "", "", 0, 85, 85, 3, 16, 16, 0, 1.2, 1.42857, 1.0, 1, 1902, 3044, 0, 1, 3.0, 2000, 2000, 2, 0, 0, 0, 0, 0, 0, 0, 1902, 3044, 1, 10, 72, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "", 0, 3, 38.0587, 2.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 147, 1, 0, 0, 0, "", "15595");
+
+-- http://www.wowhead.com/npc=57807
+DELETE FROM `creature_loot_template` WHERE `entry` = 57807;
+DELETE FROM `creature_template` WHERE `entry`=57807 LIMIT 1;
+INSERT INTO `creature_template` ( `entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction_A`, `faction_H`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `mindmg`, `maxdmg`, `dmgschool`, `attackpower`, `dmg_multiplier`, `baseattacktime`, `rangeattacktime`, `unit_class`, `unit_flags`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `minrangedmg`, `maxrangedmg`, `rangedattackpower`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `spell5`, `spell6`, `spell7`, `spell8`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `Health_mod`, `Mana_mod`, `Armor_mod`, `RacialLeader`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `movementId`, `RegenHealth`, `equipment_id`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`, `WDBVerified`) VALUES ( 57807, 0, 0, 0, 0, 0, 39828, 0, 0, 0, "Twilight Frost Evoker", "", "", 0, 85, 85, 3, 16, 16, 0, 1.2, 1.42857, 1.0, 1, 3609, 3909, 0, 1, 4.8, 2000, 2000, 2, 0, 0, 0, 0, 0, 0, 0, 3609, 3909, 1, 4, 72, 0, 0, 0, 0, 0, 0, 0, 0, 0, 109360, 109334, 109423, 0, 0, 0, 0, 0, 0, 0, 0, 0, "SmartAI", 0, 3, 63.4311, 2.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 186, 1, 0, 0, 0, "", "15595");
+
+
+DELETE FROM `creature_template` WHERE `entry`=56144 LIMIT 1;
+INSERT INTO `creature_template` ( `entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction_A`, `faction_H`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `mindmg`, `maxdmg`, `dmgschool`, `attackpower`, `dmg_multiplier`, `baseattacktime`, `rangeattacktime`, `unit_class`, `unit_flags`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `minrangedmg`, `maxrangedmg`, `rangedattackpower`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `spell5`, `spell6`, `spell7`, `spell8`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `Health_mod`, `Mana_mod`, `Armor_mod`, `RacialLeader`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `movementId`, `RegenHealth`, `equipment_id`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`, `WDBVerified`) VALUES ( 56144, 0, 0, 0, 0, 0, 39346, 0, 0, 0, "Portent of Twilight", "Twilight Dragonflight", "", 0, 86, 86, 3, 1771, 1771, 0, 1.2, 3.57143, 1.0, 1, 2990, 4056, 0, 0, 4.0, 2000, 2000, 1, 256, 0, 0, 0, 0, 0, 0, 2990, 4056, 0, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "", 0, 3, 9.6101, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 247, 1, 0, 0, 0, "", "15595");
+
+DELETE FROM `creature_template` WHERE `entry`=56140 LIMIT 1;
+INSERT INTO `creature_template` ( `entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction_A`, `faction_H`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `mindmg`, `maxdmg`, `dmgschool`, `attackpower`, `dmg_multiplier`, `baseattacktime`, `rangeattacktime`, `unit_class`, `unit_flags`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `minrangedmg`, `maxrangedmg`, `rangedattackpower`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `spell5`, `spell6`, `spell7`, `spell8`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `Health_mod`, `Mana_mod`, `Armor_mod`, `RacialLeader`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `movementId`, `RegenHealth`, `equipment_id`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`, `WDBVerified`) VALUES ( 56140, 0, 0, 0, 0, 0, 28667, 0, 0, 0, "Dream Warden", "Green Dragonflight", "", 0, 85, 85, 3, 1770, 1770, 0, 1.2, 3.57143, 1.0, 1, 2651, 2651, 0, 0, 4.0, 2000, 2000, 1, 256, 0, 0, 0, 0, 0, 0, 2651, 2651, 0, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "", 0, 3, 11.2855, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 247, 1, 0, 0, 0, "", "15595");
+

@@ -1,0 +1,2 @@
+-- car from the  image missing http://wow.zamimg.com/uploads/screenshots/thumb/214108.jpg
+INSERT INTO `creature` VALUES ('301077', '37676', '1', '0', '0', '1', '3969', '0', '0', '1804.45', '-4376.08', '103.03', '1.53244', '300', '0', '0', '42', '0', '0', '0', '0', '0');

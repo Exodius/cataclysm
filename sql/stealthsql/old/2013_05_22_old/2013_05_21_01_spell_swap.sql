@@ -1,0 +1,12 @@
+-- Spell Swap
+CREATE TABLE spell_swap (
+SpellId MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT '0' COMMENT 'Basic Spell Id',
+SwapSpell MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT '0' COMMENT 'Swap Spell',
+Aura MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT '0' COMMENT 'Requiered Aura',
+Allow TINYINT(1) NOT NULL DEFAULT '1' COMMENT '0 ->Disable',
+PRIMARY KEY (SpellId),
+UNIQUE INDEX SpellId (SwapSpell, SpellId)
+)
+ENGINE=MyISAM;
+
+ALTER TABLE spell_linked_spell ADD COLUMN req_aura int(10) unsigned NOT NULL DEFAULT '0' AFTER type;

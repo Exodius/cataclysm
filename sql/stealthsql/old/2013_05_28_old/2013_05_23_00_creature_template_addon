@@ -1,0 +1,10 @@
+DELETE FROM `creature_template_addon` WHERE `entry` IN (382, 652, 651, 648, 650, 649, 653, 42405);
+INSERT INTO `creature_template_addon` (`entry`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`) VALUES 
+(382, 0, 0, 65541, 1, 0, ''), -- lakeshire
+(652, 0, 0, 65536, 1, 0, ''), -- lakeshire
+(651, 0, 0, 65536, 1, 0, ''), -- lakeshire
+(648, 0, 0, 65536, 1, 0, ''), -- lakeshire
+(650, 0, 0, 65536, 1, 0, ''), -- lakeshire
+(649, 0, 0, 65536, 1, 0, ''), -- lakeshire
+(653, 0, 0, 65536, 1, 0, ''), -- lakeshire
+(42405, 0, 0, 65536, 1, 0, ''); -- westfall

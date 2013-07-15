@@ -1,0 +1,20 @@
+Guid Ranges
+-----------
+
+Creatures:
+
+Seen/Selectah: 300000 - 302000
+Ozeneu:        302001 - 304000
+badmoon:       304001 - 306000 - Take 320000 to 360000
+Loukie:        306001 - 308000
+Heybaby:       308001 - 310000
+MOS:           310001 - 312000
+
+GameObjects
+
+Seen/Selectah: 100000 - 102000
+Ozeneu:        102001 - 104000
+badmoon:       104001 - 106000
+Loukie:        106001 - 108000
+Heybaby:       108001 - 110000
+MOS:           110001 - 130000

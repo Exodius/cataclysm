@@ -1,0 +1,19 @@
+-- http://www.wowhead.com/npc=28512  he was level 1 and  at the place where death gate port  players was more then 40 duplicates
+
+UPDATE creature_template SET minlevel=72 AND maxlevel=72 WHERE entry=28512;
+-- http://old.wowhead.com/npc=28500 hes just  a simple vendor so he had data in gossip_menu_id and if its a vendor then 0 
+UPDATE creature_template SET gossip_menu_id=0 WHERE entry=28500;
+
+-- http://old.wowhead.com/npc=12636
+-- http://old.wowhead.com/npc=12616
+-- http://old.wowhead.com/npc=12617
+-- http://old.wowhead.com/npc=12577
+-- those npc was  have rong exp
+UPDATE creature_template SET exp=0 WHERE entry=12577;
+UPDATE creature_template SET exp=0 WHERE entry=12636;
+UPDATE creature_template SET exp=0 WHERE entry=12616;
+UPDATE creature_template SET exp=0 WHERE entry=12617;
+
+-- http://old.wowhead.com/npc=16378
+-- this npc was  superman LOOL he was flying with inhabittype 5 :)
+UPDATE creature_template SET InhabitType=1 WHERE entry=16378;

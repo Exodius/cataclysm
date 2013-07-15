@@ -1,0 +1,70 @@
+-- http://www.wowhead.com/npc=53404 have 0 spells
+DELETE FROM npc_trainer WHERE entry=53404;
+INSERT INTO `npc_trainer` VALUES ('53404', '18540', '27000', '354', '0', '58');
+INSERT INTO `npc_trainer` VALUES ('53404', '691', '7500', '354', '0', '30');
+INSERT INTO `npc_trainer` VALUES ('53404', '1122', '22500', '354', '0', '50');
+INSERT INTO `npc_trainer` VALUES ('53404', '712', '3600', '354', '0', '20');
+INSERT INTO `npc_trainer` VALUES ('53404', '697', '390', '354', '0', '8');
+INSERT INTO `npc_trainer` VALUES ('53404', '5697', '2060', '354', '0', '16');
+INSERT INTO `npc_trainer` VALUES ('53404', '6229', '10500', '354', '0', '34');
+INSERT INTO `npc_trainer` VALUES ('53404', '5740', '2784', '593', '0', '18');
+INSERT INTO `npc_trainer` VALUES ('53404', '5782', '1418', '355', '0', '14');
+INSERT INTO `npc_trainer` VALUES ('53404', '1714', '6000', '355', '0', '26');
+INSERT INTO `npc_trainer` VALUES ('53404', '710', '9000', '354', '0', '32');
+INSERT INTO `npc_trainer` VALUES ('53404', '603', '3600', '355', '0', '20');
+INSERT INTO `npc_trainer` VALUES ('53404', '980', '1076', '355', '0', '12');
+INSERT INTO `npc_trainer` VALUES ('53404', '29858', '105000', '354', '0', '66');
+INSERT INTO `npc_trainer` VALUES ('53404', '74434', '680', '354', '0', '10');
+INSERT INTO `npc_trainer` VALUES ('53404', '19028', '3600', '354', '0', '20');
+INSERT INTO `npc_trainer` VALUES ('53404', '79268', '1076', '354', '0', '12');
+INSERT INTO `npc_trainer` VALUES ('53404', '47897', '186000', '593', '0', '76');
+INSERT INTO `npc_trainer` VALUES ('53404', '6353', '3600', '593', '0', '54');
+INSERT INTO `npc_trainer` VALUES ('53404', '1949', '7500', '593', '0', '30');
+INSERT INTO `npc_trainer` VALUES ('53404', '86091', '22500', '802', '0', '50');
+INSERT INTO `npc_trainer` VALUES ('53404', '698', '16500', '354', '0', '42');
+INSERT INTO `npc_trainer` VALUES ('53404', '87498', '222000', '802', '0', '80');
+INSERT INTO `npc_trainer` VALUES ('53404', '29722', '93000', '593', '0', '64');
+INSERT INTO `npc_trainer` VALUES ('53404', '77799', '234000', '593', '0', '81');
+INSERT INTO `npc_trainer` VALUES ('53404', '80398', '258000', '355', '0', '83');
+INSERT INTO `npc_trainer` VALUES ('53404', '702', '2060', '355', '0', '16');
+INSERT INTO `npc_trainer` VALUES ('53404', '689', '190', '355', '0', '6');
+INSERT INTO `npc_trainer` VALUES ('53404', '5484', '19500', '355', '0', '44');
+INSERT INTO `npc_trainer` VALUES ('53404', '23161', '0', '355', '0', '40');
+INSERT INTO `npc_trainer` VALUES ('53404', '1120', '680', '355', '0', '10');
+INSERT INTO `npc_trainer` VALUES ('53404', '48020', '102000', '354', '0', '78');
+INSERT INTO `npc_trainer` VALUES ('53404', '1098', '7500', '354', '0', '30');
+INSERT INTO `npc_trainer` VALUES ('53404', '126', '4200', '354', '0', '22');
+INSERT INTO `npc_trainer` VALUES ('53404', '48018', '102000', '354', '0', '78');
+INSERT INTO `npc_trainer` VALUES ('53404', '77801', '282000', '354', '0', '85');
+INSERT INTO `npc_trainer` VALUES ('53404', '687', '480', '354', '0', '8');
+INSERT INTO `npc_trainer` VALUES ('53404', '5676', '2784', '593', '0', '18');
+INSERT INTO `npc_trainer` VALUES ('53404', '27243', '150000', '355', '0', '72');
+INSERT INTO `npc_trainer` VALUES ('53404', '6789', '16500', '355', '0', '42');
+INSERT INTO `npc_trainer` VALUES ('53404', '5784', '0', '593', '0', '20');
+INSERT INTO `npc_trainer` VALUES ('53404', '1454', '142', '355', '0', '5');
+INSERT INTO `npc_trainer` VALUES ('53404', '348', '60', '593', '0', '3');
+INSERT INTO `npc_trainer` VALUES ('53404', '755', '1076', '354', '0', '12');
+INSERT INTO `npc_trainer` VALUES ('53404', '28176', '81000', '354', '0', '62');
+INSERT INTO `npc_trainer` VALUES ('53404', '29893', '117000', '354', '0', '68');
+INSERT INTO `npc_trainer` VALUES ('53404', '693', '2345', '354', '0', '18');
+INSERT INTO `npc_trainer` VALUES ('53404', '1490', '22500', '355', '0', '52');
+INSERT INTO `npc_trainer` VALUES ('53404', '6201', '552', '354', '0', '9');
+INSERT INTO `npc_trainer` VALUES ('53404', '93375', '680', '354', '0', '10');
+INSERT INTO `npc_trainer` VALUES ('53404', '172', '97', '355', '0', '4');
+
+-- http://www.wowhead.com/npc=49599 have no items for sale and rong flag health
+DELETE FROM `creature_template` WHERE `entry`=49599 LIMIT 1;
+INSERT INTO `creature_template` ( `entry`, `difficulty_entry_1`, `difficulty_entry_2`, `difficulty_entry_3`, `KillCredit1`, `KillCredit2`, `modelid1`, `modelid2`, `modelid3`, `modelid4`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction_A`, `faction_H`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `mindmg`, `maxdmg`, `dmgschool`, `attackpower`, `dmg_multiplier`, `baseattacktime`, `rangeattacktime`, `unit_class`, `unit_flags`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `minrangedmg`, `maxrangedmg`, `rangedattackpower`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `spell5`, `spell6`, `spell7`, `spell8`, `PetSpellDataId`, `VehicleId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `Health_mod`, `Mana_mod`, `Armor_mod`, `RacialLeader`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `movementId`, `RegenHealth`, `equipment_id`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`, `WDBVerified`) VALUES ( 49599, 0, 0, 0, 0, 0, 36556, 0, 0, 0, "Ben Mora", "Innkeeper", "", 342, 85, 85, 3, 12, 12, 65664, 1.0, 1.35714, 1.0, 0, 530, 713, 0, 827, 1.0, 2000, 2000, 1, 32768, 0, 0, 0, 0, 0, 0, 530, 713, 827, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 33, "", 0, 1, 0.9303, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 875, 1, 0, 0, 0, "", "13623");
+
+--  http://www.wowhead.com/npc=49599
+DELETE FROM `npc_vendor` WHERE `entry` = 49599;
+INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `type`) VALUES 
+(49599, 0, 58261, 0, 0, 0, 1), 
+(49599, 0, 58274, 0, 0, 0, 1), 
+(49599, 0, 58275, 0, 0, 0, 1), 
+(49599, 0, 58257, 0, 0, 0, 1), 
+(49599, 0, 58269, 0, 0, 0, 1), 
+(49599, 0, 58260, 0, 0, 0, 1), 
+(49599, 0, 58268, 0, 0, 0, 1), 
+(49599, 0, 58256, 0, 0, 0, 1), 
+(49599, 0, 58280, 0, 0, 0, 1);
